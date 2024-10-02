@@ -1,0 +1,8 @@
+return (
+    <div className="stats-container">
+        {stats.map(stat => {
+            console.log(stat); // Verifique o que está sendo passado para StatsCard
+            return <StatsCard key={stat.battleId} data={stat} />;
+        })}
+    </div>
+);
